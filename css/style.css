@@ -4,3 +4,7 @@ nav a{color:white;margin:0 10px;text-decoration:none;font-weight:bold;}
 section{padding:30px;max-width:900px;margin:auto;background:white;}
 .hero{background:#e8f0f5;}
 footer{background:#0b3c5d;color:white;text-align:center;padding:10px;}
+.logo {
+  max-width: 120px;
+  margin-bottom: 10px;
+}
