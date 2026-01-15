@@ -1,10 +1,92 @@
-body{font-family:Arial,sans-serif;margin:0;background:#f4f6f8;color:#333;}
-header{background:#0b3c5d;color:white;padding:20px;text-align:center;}
-nav a{color:white;margin:0 10px;text-decoration:none;font-weight:bold;}
-section{padding:30px;max-width:900px;margin:auto;background:white;}
-.hero{background:#e8f0f5;}
-footer{background:#0b3c5d;color:white;text-align:center;padding:10px;}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f8;
+  color: #333;
+}
+
+/* HEADER */
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background: #0b3c5d;
+  color: white;
+  padding: 20px;
+  flex-wrap: wrap; /* mobile friendly */
+}
+
 .logo {
   max-width: 120px;
-  margin-bottom: 10px;
+  height: auto;
+}
+
+.header-text {
+  text-align: left;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header-text p {
+  margin: 5px 0 10px 0;
+  font-size: 14px;
+}
+
+/* NAVIGATION */
+nav a {
+  color: white;
+  margin-right: 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* CONTENT SECTIONS */
+section {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+}
+
+.hero {
+  background: #e8f0f5;
+  text-align: center;
+}
+
+.hero h2 {
+  margin-top: 0;
+}
+
+/* FOOTER */
+footer {
+  background: #0b3c5d;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .header-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-text {
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px;
+  }
 }
